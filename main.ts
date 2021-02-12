@@ -17,6 +17,7 @@ basic.forever(function () {
         game.addScore(1)
         balon.set(LedSpriteProperty.Y, 0)
         balon.set(LedSpriteProperty.X, randint(0, 4))
+        music.startMelody(music.builtInMelody(Melodies.BaDing), MelodyOptions.Once)
         if (süre > 250) {
             süre += -50
         }
@@ -24,5 +25,6 @@ basic.forever(function () {
         game.removeLife(1)
         balon.set(LedSpriteProperty.Y, 0)
         balon.set(LedSpriteProperty.X, randint(0, 4))
+        music.startMelody(music.builtInMelody(Melodies.PowerDown), MelodyOptions.Once)
     }
 })
