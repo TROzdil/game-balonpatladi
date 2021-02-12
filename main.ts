@@ -13,7 +13,6 @@ game.setLife(5)
 basic.forever(function () {
     basic.pause(süre)
     balon.change(LedSpriteProperty.Y, 1)
-    basic.pause(süre)
     if (kukla.isTouching(balon)) {
         game.addScore(1)
         balon.set(LedSpriteProperty.Y, 0)
